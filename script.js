@@ -44,6 +44,9 @@ form.addEventListener('submit', (e) => {
     saveMessage(message);
     input.value = '';
     window.scrollTo(0, document.body.scrollHeight);
+    setTimeout(() => {
+      location.reload();
+    }, 1000); // Refresh the page after 1 second
   }
 });
 
